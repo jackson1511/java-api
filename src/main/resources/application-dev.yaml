@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: springbootapi
+  # db-connection
+  datasource:
+    url: jdbc:postgresql://db:5432/springboot_db
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
